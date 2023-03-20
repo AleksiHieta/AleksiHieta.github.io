@@ -17,3 +17,5 @@ Use headers in descending order. h1, h2, h3, ..., h6
 HTML entities at dev.w3.org is helpful for listing special chars
 
 <a> is for all links. Can link to another page, a file, or a download
+    https://google.com for 'href' goes to a whole new site
+    use attribute=_blank for opening a new tab
