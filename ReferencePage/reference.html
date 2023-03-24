@@ -6,10 +6,79 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>References and Examples</title>
     <style>
-
+        /* Comment in CSS */
+        .subsection.header {
+            color: red;
+        }
+        .subsection#description {
+            color: blue;
+        }
+        .ancestor .content {
+            /* delcarations*/
+            color: purple;
+        }
+        .colorcoded {
+            color: #1100ff;
+            color: rgb(100, 0, 127);
+            color: hsl(15, 82%, 56%);
+            color: blue;
+        }
+        img {
+            height: auto;
+            width: 500px;
+        }
     </style>
 </head>
 <body>
+    <h1>Header 1</h1>
+    <!--This is a comment-->
+    <h2>Lists</h2>
+    <!--This is an unordered list with bullet points-->
+    <ul>
+        <li>item 1</li>
+        <li>item 2</li>
+        <li>item 3</li>
+    </ul>
+    <!--This is an ordered list with numbers-->
+    <ol>
+        <li>item 1</li>
+        <li>item 2</li>
+        <li>item 3</li>
+    </ol>
+
+    <h2>Anchor and links</h2>
+    <!--This is an anchor-->
+    <a>Anchor</a>
+    <!--But a more common element is the link-->
+    <a href="https://www.google.com">Click me for Google</a>
+    <!--Absolute Format: protocol://domain/path-->
+    <!--Relative Format: ./path/file-->
+
+    <h2>Images</h2>
+    <img src="../images/goose.png" alt="Goose">
+
+    <h2>Selectors</h2>
+    <!--class and id selectors-->
+    <div class="subsection header">Post</div>
+    <p class="subsection" id="description">Description of the Post</p>
+    <!--ID selectors take precedence over any number of class selectors-->
+    <!--Higher specificity in css takes priority-->
+
+    <h2>Descendant Combinators</h2>
+    <div class="ancestor">
+        <div class="content"> <!--B-->
+            <div class="content"> <!--C-->
+            </div>
+        </div>
+    </div>
+    <div class="content"></div> <!--D-->
+    <!--B and C have a parent class "Ancestor" so style changes effect them and not D-->
+
+    <h2>Text Color</h2>
+    <p class="colorcoded">Hello</p>
+
+    <h2>Inline CSS</h2>
+    <div style="color: white; background-color: black;">...</div>
     
 </body>
 </html>
