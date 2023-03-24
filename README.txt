@@ -1,6 +1,11 @@
+
+ALL CODE IS FOR REFERENCE ONLY.
+________________________________________________________
+
+NOTES:
+
 Install "Live Server" extension before running
 
-Notes:
 If you set "border-radius" to half of the width, you get a circle image
 
 Start with a quick validation for issues with display
@@ -21,3 +26,8 @@ HTML entities at dev.w3.org is helpful for listing special chars
     use attribute=_blank for opening a new tab
 
 For images go to unsplash.com
+
+________________________________________________________
+
+ODIN PROJECT NOTES:
+
